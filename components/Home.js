@@ -14,7 +14,7 @@ function Home() {
     fetch("https://mymoviz-backend-wheat.vercel.app/movies")
       .then((response) => response.json())
       .then((data) => {
-        setMoviesData(data.results);
+        setMoviesData(data.movies);
       });
   }, []);
 
